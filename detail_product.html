@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+  :root{
+
+  --very-light-pink: #C7C7C7;
+  --text-input-field: #F7F7F7;
+  --hospital-green: #ACD9B2;
+  --white: #FFF;
+  --black: #000;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+
+  }
+
+  body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+  }
+
+  .detail-product{
+
+    width: 400px;
+    height: 100vh; 
+  }
+
+  .detail-product {
+
+    position: relative;
+  }
+
+  .image-product {
+
+    margin: 0 0 32px;
+    
+  } 
+
+  .image-product img {
+
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 20px ;
+    
+  }
+
+  .description-product{
+    
+    text-align: justify;
+    padding: 0 24px;
+
+  }
+
+  .description-product p{
+
+    margin: 0px;
+}
+
+
+  .description-product p:nth-child(1){
+
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+   .description-product p:nth-child(2){
+
+    margin-bottom: 32px;
+  }
+
+  .description-product p:nth-child(3){
+
+    text-indent: var(--lg);
+  }
+  
+  .primary-button {
+
+    background-color: var(--hospital-green);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 40px;
+
+  }
+
+
+  .icon_close{
+
+    width: 28px;
+    height: auto;
+    position: absolute;
+
+    background-color: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+    
+    top: 15px;
+    left: 15px;
+
+  }
+
+  .icon_close:hover{
+
+    border: 1px solid var(--very-light-pink);
+  }
+
+</style>
+ 
+<body>
+
+  <aside class="detail-product">
+
+    <div>
+    
+      <figure class="image-product">
+
+        <img src="./assets/product/bike.jpg" alt="photo product">
+
+      </figure>
+      
+      <img src="./assets/icons/icon_close.png" alt="close product" class="icon_close">
+    
+    </div>
+    
+    <div class="description-product">
+      
+      <p>$120.00</p>
+
+      <p>Bike </p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe obcaecati ex, eum aspernatur cum autem quasi aliquam sapiente, eveniet, minus soluta.</p>
+
+    </div>
+
+    <div>
+
+      <button class="primary-button login-button">
+        
+        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+        <span>Add to cart</span> 
+      
+      </button>
+
+
+    </div>
+
+  </aside>
+
+  
+</body>
+</html>
